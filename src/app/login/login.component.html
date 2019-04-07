@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row row-details">
-
+    \
     <div class="col-md-6 text-center">
 
     </div>
@@ -12,9 +12,9 @@
       <div class="form-group">
         <input type="password" class="form-control" placeholder="Password" #userPassword required>
       </div>
-      <a class ="forget-register-link" (click) ="forgetPassword()">Forget Password ?</a>
-      <span class ="forget-register-link link-color"><span> Not a User?,</span> <a (click) ="goToRegister()">Register Here </a></span>
-      <button class="btn btn-lg btn-primary btn-block mb-1"
+      <a class ="forget-register-link color-black" (click) ="forgetPassword()" class="color-gold">Forget Password ?</a>
+      <span class ="forget-register-link link-color"><span class="color-gold"> Not a User?,</span> <a (click) ="goToRegister()" class="color-gold">Register Here </a></span>
+      <button class="btn btn-lg btn-primary btn-block mb-1 background-color-black "
         (click)="authService.login(userEmail.value, userPassword.value)" >Login</button>
     </div>
 

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     LoginComponent,
     HomeComponent,
     SignupComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

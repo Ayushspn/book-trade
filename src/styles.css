@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.background-color-black {
+    background-color: black !important;
+}
+
+.color-black{
+    color: black;
+}
+
+.color-blue {
+    color: #428bca;
+}
+
+.color-gold {
+    color: gold;
+}

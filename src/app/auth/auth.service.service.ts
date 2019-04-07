@@ -11,7 +11,6 @@ export class AuthServiceService {
 
     this.afAuth.authState.subscribe(user => {
       if (user) {
-        console.log('user in authetication', user);
         this.user = user;
         localStorage.setItem('user', JSON.stringify(this.user));
       } else {
