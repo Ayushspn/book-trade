@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row row-details">
+
+    <div class="col-md-6 text-center">
+
+    </div>
+    <div class="col-sm-10 col-md-6">
+      <h2>Login Form</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" id="usr" placeholder="Email" #userEmail required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" #userPassword required>
+      </div>
+      <a class ="forget-register-link" (click) ="forgetPassword()">Forget Password ?</a>
+      <span class ="forget-register-link link-color"><span> Not a User?,</span> <a (click) ="goToRegister()">Register Here </a></span>
+      <button class="btn btn-lg btn-primary btn-block mb-1"
+        (click)="authService.login(userEmail.value, userPassword.value)" >Login</button>
+    </div>
+
+
+  </div>
+</div>
