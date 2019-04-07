@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light background-color-black ">
   <a class="navbar-brand" href="#">Book Store</a>
-  
-  <div class="pull-right" *ngIf ="loggedInUser">
-    <span class="color-blue"> Logged In</span>
+
+  <div class="pull-right" *ngIf="loggedInUser">
+    <div class ="user-profile-background">
+      <span class="glyphicon glyphicon-user user-profile"></span>
+    </div>
   </div>
 </nav>

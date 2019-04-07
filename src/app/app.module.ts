@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { HeaderComponent } from './header/header.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { HeaderComponent } from './header/header.component';
     AngularFireStorageModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
