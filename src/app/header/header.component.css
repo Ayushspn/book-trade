@@ -1,7 +1,9 @@
 .header-books{
     background-color: black;
 }
-
+.navbar {
+    margin-bottom: 0px;
+}
 .user-profile{
     font-size: 24px;
     color: black;
@@ -14,4 +16,13 @@
     line-height: 50px;
     background-color: #428bca;
     border-radius: 50%;
+}
+#menu{
+    position: absolute;
+    width: 130px;
+    right: 36px;
+    background-color: black;
+}
+.profile-li{
+    margin: 20px 0;
 }

@@ -2,6 +2,7 @@
     box-shadow: 0  10px  20px  rgba(0,0,0,0.19), 0  6px  6px  rgba(0,0,0,0.23);
 }
 
+
 .text-center{
   background-image:  url(/assets/images/landing-page-books.jpg);  
   background-repeat: no-repeat;
@@ -9,7 +10,9 @@
   height: 300px;
   background-size: contain;
 }
-
+.login-heading{
+  margin-top: -20px;
+}
 .login-form{
   padding-top: 20px;
 }

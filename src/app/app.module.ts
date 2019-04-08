@@ -17,6 +17,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { HeaderComponent } from './header/header.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { DropdownDirective } from './shared/dropdown.directive';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     HomeComponent,
     SignupComponent,
     ForgetPasswordComponent,
-    HeaderComponent
+    HeaderComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
