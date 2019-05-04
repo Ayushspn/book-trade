@@ -18,29 +18,36 @@ export class AuthServiceService {
       }
     });
   }
-  async  login(email:  string, password:  string) {
+  async  login(email: string, password: string) {
 
     try {
-        await  this.afAuth.auth.signInWithEmailAndPassword(email, password);
-        console.log(email, password);
-        this.router.navigate(['/home']);
+      await this.afAuth.auth.signInWithEmailAndPassword(email, password);
+      this.router.navigate(['/profile']);
     } catch (e) {
-        alert('Error!'  +  e.message);
+      alert('Error!' + e.message);
     }
-    }
+  }
 
-    async  signUp(email:  string, password:  string) {
-      try {
-           return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
-      } catch (e) {
-          alert('Error!'  +  e.message);
-      }
-      }
-      async  foreget(email:  string) {
-        try {
-             return this.afAuth.auth.sendPasswordResetEmail(email);
-        } catch (e) {
-            alert('Error!'  +  e.message);
-        }
-        }
+  async  signUp(email: string, password: string) {
+    try {
+      return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+    } catch (e) {
+      alert('Error!' + e.message);
+    }
+  }
+  async  foreget(email: string) {
+    try {
+      return this.afAuth.auth.sendPasswordResetEmail(email);
+    } catch (e) {
+      alert('Error!' + e.message);
+    }
+  }
+
+  async  logOut() {
+    try {
+      return this.afAuth.auth.signOut();
+    } catch (e) {
+      alert('Error!' + e.message);
+    }
+  }
 }

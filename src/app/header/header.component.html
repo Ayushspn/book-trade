@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light background-color-black ">
   <a class="navbar-brand" href="#">Book Store</a>
 
-<div class="pull-right" *ngIf="loggedInUser" appDropdown>
+<div class="pull-right drop-down-toggle" *ngIf="loggedInUser" (click) ="toggleValue()">
     <div class ="user-profile-background">
       <span class="glyphicon glyphicon-user user-profile"></span>
     </div>
   </div>
 </nav>
-<ul id="menu">
+<ul id="menu" *ngIf ="toggleDropDown">
     <li class="profile-li"><a href="">Profile</a></li>
-    <li class="profile-li"><a href="">Log Out</a>
+    <li class="profile-li" (click) ="logOutUser()"><a>Log Out</a>
   </ul>

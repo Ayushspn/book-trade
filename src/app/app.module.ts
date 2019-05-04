@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ToastrModule } from 'ng6-toastr-notifications';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { NotifierModule } from 'angular-notifier';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -18,6 +18,8 @@ import { HeaderComponent } from './header/header.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { BookListComponent } from './home/book-list/book-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     SignupComponent,
     ForgetPasswordComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    BookListComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NotifierModule
   ],
   providers: [],
   bootstrap: [AppComponent]

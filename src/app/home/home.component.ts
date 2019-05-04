@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthServiceService } from '../auth/auth.service.service';
-
+import {BookListComponent} from './book-list/book-list.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

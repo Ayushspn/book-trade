@@ -14,9 +14,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   title = 'book-trading';
 
   ngOnInit() {
-    const books = this.firebaseServiceService.getBooks().subscribe((data) => {
-      console.log('data', data);
-    });
+   
   }
 
   ngAfterViewInit() {

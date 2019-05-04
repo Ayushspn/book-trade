@@ -28,3 +28,10 @@
 .link-color{
   color: #428bca;
 }
+
+.color-gold {
+cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}

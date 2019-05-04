@@ -4,6 +4,10 @@
 .navbar {
     margin-bottom: 0px;
 }
+
+.drop-down-toggle{
+    cursor: pointer;
+}
 .user-profile{
     font-size: 24px;
     color: black;
@@ -25,4 +29,15 @@
 }
 .profile-li{
     margin: 20px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.profile-li:hover{
+
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
 }
