@@ -1,0 +1,26 @@
+.mrgn-top{
+    margin-top: 20px;
+}
+
+
+.sample-profile-pic{
+    background-image:  url(/assets/images/placeholder.jpg);  
+    background-repeat: no-repeat;
+    height: 230px;
+    /* background-position: center-top;
+    
+    background-size: contain; */
+  }
+
+  .cutsom-btn{
+      background-color: black;
+      color: cadetblue;
+  }
+
+  .mandatory-red{
+      color: red;
+  }
+
+  .left-padding{
+      padding-left: 10px;
+  }

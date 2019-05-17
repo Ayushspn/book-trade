@@ -2,24 +2,52 @@
   <div class="row row-details">
     <div class="col-sm-12 col-md-12">
       <h2 class="login-heading">Know About Your Self</h2>
-      <div class="form-group col-sm-6 col-md-6">
-          <span>Upload Your Picture</span>
-          
+      <div class="form-group col-sm-3 col-md-3">
+        <div class="sample-profile-pic">
+        </div>
+        <span>Upload Your Picture</span>
+        <input type="file" name="pic" accept="image/*">
+
       </div>
 
-      <div class="form-group col-sm-6 col-md-6">
-        <div class="form-group col-sm-12 col-md-12">
+      <div class="form-group col-sm-9 col-md-9">
+          <span class="mandatory-red">*</span> <span class="left-padding">Fields are mandatory</span>
+        <div class="form-group col-sm-12 col-md-12 mrgn-top">
+            <span class="mandatory-red">*</span>
           <input type="text" class="form-control" id="fname" placeholder="First Name" #fName required>
         </div>
-        <div class="form-group col-sm-12 col-md-12">
+        <div class="form-group col-sm-12 col-md-12 mrgn-top">
+            <span class="mandatory-red">*</span>
           <input type="text" class="form-control" id="Lname" placeholder="Last Name" #lName required>
         </div>
+        <div class="form-group col-sm-12 col-md-12 mrgn-top">
+            <span class="mandatory-red">*</span>
+          <input type="text" class="form-control" id="AltrntEmail" placeholder="Alternate Email Address" #alterntEmail
+            required>
+        </div>
+        <div class="form-group col-sm-12 col-md-12 mrgn-top">
+            <span class="mandatory-red">*</span>
+          <input type="text" class="form-control" id="address" placeholder='Enter your Address' #address required>
+        </div>
       </div>
-      <div class="form-group col-sm-6 col-md-6"></div>
-      <div class="form-group col-sm-6 col-md-6">
-        <input type="text" class="form-control" id="lname" placeholder="Last Name" #lName required>
+      <div class="form-group col-sm-12 col-md-12"></div>
+      <div class="form-group col-sm-2 col-md-2">
+        <label>Age <span class="mandatory-red">*</span></label>
+        <input type="number" class="form-control" id="age" required>
+      </div>
+      <div class="form-group col-sm-2 col-md-2">
+        <label>Gender <span class="mandatory-red">*</span></label>
+        <input type="number" class="form-control" id="age" required>
+      </div>
+      <div class="form-group col-sm-8 col-md-8">
+        <label>Phone Number <span class="mandatory-red">*</span></label>
+        <input type="text" class="form-control" id="PhnNumber" placeholder="Enter Phone number" required>
       </div>
 
+      <div class="form-group col-sm-12 col-md-12 mrgn-top">
+          <button type="button" class="btn cutsom-btn col-sm-5 col-md-5 pull-left">Submit</button>
+          <button type="button" class="btn cutsom-btn col-sm-5 col-md-5 pull-right">Cancel</button>
+      </div>
     </div>
 
 
