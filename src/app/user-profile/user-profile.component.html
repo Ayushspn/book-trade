@@ -1,55 +1,60 @@
 <div class="container">
   <div class="row row-details">
+    <form #userlogin  (ngSubmit) = "onFormSubmit(userlogin.value)">
     <div class="col-sm-12 col-md-12">
       <h2 class="login-heading">Know About Your Self</h2>
       <div class="form-group col-sm-3 col-md-3">
         <div class="sample-profile-pic">
         </div>
         <span>Upload Your Picture</span>
-        <input type="file" name="pic" accept="image/*">
+        <input type="file"  accept="image" (change) ="onUploadImage($event)">
 
       </div>
-
+      
       <div class="form-group col-sm-9 col-md-9">
           <span class="mandatory-red">*</span> <span class="left-padding">Fields are mandatory</span>
+
         <div class="form-group col-sm-12 col-md-12 mrgn-top">
             <span class="mandatory-red">*</span>
-          <input type="text" class="form-control" id="fname" placeholder="First Name" #fName required>
+          <input type="text" class="form-control" id="fname" placeholder="First Name" name ="fname" ngModel required>
         </div>
         <div class="form-group col-sm-12 col-md-12 mrgn-top">
             <span class="mandatory-red">*</span>
-          <input type="text" class="form-control" id="Lname" placeholder="Last Name" #lName required>
+          <input type="text" class="form-control" id="Lname" placeholder="Last Name" name ="lname" ngModel required>
         </div>
         <div class="form-group col-sm-12 col-md-12 mrgn-top">
             <span class="mandatory-red">*</span>
-          <input type="text" class="form-control" id="AltrntEmail" placeholder="Alternate Email Address" #alterntEmail
+          <input type="text" class="form-control" id="AltrntEmail" placeholder="Alternate Email Address" name ="altEmail" ngModel
             required>
         </div>
         <div class="form-group col-sm-12 col-md-12 mrgn-top">
             <span class="mandatory-red">*</span>
-          <input type="text" class="form-control" id="address" placeholder='Enter your Address' #address required>
+          <input type="text" class="form-control" id="address" placeholder='Enter your Address' name ="address" ngModel required>
         </div>
       </div>
       <div class="form-group col-sm-12 col-md-12"></div>
       <div class="form-group col-sm-2 col-md-2">
         <label>Age <span class="mandatory-red">*</span></label>
-        <input type="number" class="form-control" id="age" required>
+        <input type="number" class="form-control" id="age" name ="age" ngModel required>
       </div>
       <div class="form-group col-sm-2 col-md-2">
         <label>Gender <span class="mandatory-red">*</span></label>
-        <input type="number" class="form-control" id="age" required>
+        <!-- <input type="number" class="form-control" id="gender" required> -->
+        <select name="" id="" class="form-control" name ="gender" ngModel>
+            <option *ngFor="let i of gender;" value="{{i}}" >{{ i }}</option>
+        </select>
       </div>
       <div class="form-group col-sm-8 col-md-8">
         <label>Phone Number <span class="mandatory-red">*</span></label>
-        <input type="text" class="form-control" id="PhnNumber" placeholder="Enter Phone number" required>
+        <input type="text" class="form-control" id="PhnNumber" placeholder="Enter Phone number"  name ="phNumber" ngModel required>
       </div>
 
       <div class="form-group col-sm-12 col-md-12 mrgn-top">
-          <button type="button" class="btn cutsom-btn col-sm-5 col-md-5 pull-left">Submit</button>
+          <button type="submit" class="btn cutsom-btn col-sm-5 col-md-5 pull-left">Submit</button>
           <button type="button" class="btn cutsom-btn col-sm-5 col-md-5 pull-right">Cancel</button>
       </div>
     </div>
-
+  </form>
 
   </div>
 </div>
