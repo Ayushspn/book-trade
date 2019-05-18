@@ -14,7 +14,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   title = 'book-trading';
 
   ngOnInit() {
-   
   }
 
   ngAfterViewInit() {
