@@ -9,7 +9,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" (click) ='setAttribute()'>&times;</button>
                     <h4 class="modal-title">Create Your Book</h4>
                 </div>
                 <div class="modal-body">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="form-group col-sm-12 col-md-12 mrgn-top">
-                        <button type="submit" class="btn cutsom-btn col-sm-5 col-md-5 pull-left">Save Details</button>
+                        <button type="submit" class="btn cutsom-btn col-sm-5 col-md-5 pull-left" [attr.data-dismiss]="setAttribute">Save Details</button>
                         <button type="button" class="btn cutsom-btn col-sm-5 col-md-5 pull-right"
                             data-dismiss="modal">Cancel</button>
                     </div>

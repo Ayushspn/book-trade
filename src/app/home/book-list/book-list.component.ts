@@ -7,11 +7,14 @@ import {FirebaseServiceService} from '../../database/firebase-service.service';
   styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent implements OnInit {
-
+    bookList = [];
   constructor(private firebaseDataSrvc: FirebaseServiceService) { }
 
   ngOnInit() {
-    this.firebaseDataSrvc.getBooks().subscribe((data) => console.log(data));
+    this.firebaseDataSrvc.getBooks().subscribe((data) => {
+      this.bookList = data;
+    }
+    );
   }
 
 }

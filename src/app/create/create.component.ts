@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { BookService } from '../service/book.service';
 import * as firebase from 'firebase';
 import { AngularFirestore } from 'angularfire2/firestore';
@@ -13,9 +13,13 @@ export class CreateComponent implements OnInit {
   constructor(private bookService: BookService, private afStore: AngularFirestore) { }
   imagePath: string;
   disableBtn = true;
+  setAttribute = '';
   ngOnInit() {
+    this.setAttribute = '';
   }
-
+  // ngDoCheck() {
+  //   this.setAttribute = '';
+  // }
   onUploadImage(event) {
     const loggedInUser = JSON.parse(localStorage.getItem('user'));
     const storageRef = firebase.storage().ref();
@@ -38,7 +42,7 @@ export class CreateComponent implements OnInit {
     details.value.id = id;
     details.value.createdId = createdId;
     this.bookService.saveBookDetails(details.value).then((data) => {
-      console.log('closed');
+      this.setAttribute = 'modal';
     });
     console.log('details', details.value);
   }
