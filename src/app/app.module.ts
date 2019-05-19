@@ -22,6 +22,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { BookListComponent } from './home/book-list/book-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CreateComponent } from './create/create.component';
+import { BookComponent } from './home/book-list/book/book.component';
+
 
 firebase.initializeApp(environment.config);
 @NgModule({
@@ -35,7 +37,8 @@ firebase.initializeApp(environment.config);
     DropdownDirective,
     BookListComponent,
     UserProfileComponent,
-    CreateComponent
+    CreateComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

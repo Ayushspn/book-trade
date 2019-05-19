@@ -3,14 +3,7 @@
 
 
         <div class="col-md-4 text-center" *ngFor="let book of bookList">
-            <div class="card">
-                <img class="card-img-top" src={{book.booksDetails.imgePath}} alt="Card image cap" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">{{book.booksDetails.bookName}}</h5>
-                    <p class="card-text">{{book.booksDetails.bDescription}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+            <app-book [bookDetails] ="book"></app-book>
         </div>
 
     </div>
