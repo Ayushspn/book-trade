@@ -21,6 +21,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { BookListComponent } from './home/book-list/book-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CreateComponent } from './create/create.component';
 
 firebase.initializeApp(environment.config);
 @NgModule({
@@ -33,7 +34,8 @@ firebase.initializeApp(environment.config);
     HeaderComponent,
     DropdownDirective,
     BookListComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

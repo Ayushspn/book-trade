@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor(private afStorage: AngularFireStorage, private userProfileService: UserProfileService, 
+  constructor(private afStorage: AngularFireStorage, private userProfileService: UserProfileService,
     private afStore: AngularFirestore, private activatedrouter: Router ) { }
   // ref: AngularFireStorage;
   task: AngularFireUploadTask;
