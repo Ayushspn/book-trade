@@ -3,6 +3,6 @@
   <div class="card-body">
       <h5 class="card-title">{{bookDetails.booksDetails.bookName}}</h5>
       <p class="card-text">{{bookDetails.booksDetails.bDescription}}</p>
-      <button  class="btn  cutsom-btn  cutsom-btn-margin">View Book Details</button>
+      <button  class="btn  cutsom-btn  cutsom-btn-margin" (click) ="goToBookDetailsPage(bookDetails.booksDetails.id)">View Book Details</button>
   </div>
 </div>

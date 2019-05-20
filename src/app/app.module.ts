@@ -23,6 +23,7 @@ import { BookListComponent } from './home/book-list/book-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CreateComponent } from './create/create.component';
 import { BookComponent } from './home/book-list/book/book.component';
+import { BookDetailsComponent } from './home/book-details/book-details.component';
 
 
 firebase.initializeApp(environment.config);
@@ -38,7 +39,8 @@ firebase.initializeApp(environment.config);
     BookListComponent,
     UserProfileComponent,
     CreateComponent,
-    BookComponent
+    BookComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,10 +8,15 @@ export class BookService {
   constructor(private booksDb: AngularFirestore) { }
 
   saveBookDetails(booksDetails) {
-     return this.booksDb.collection('Books').doc(booksDetails.id).set({
+    return this.booksDb.collection('Books').doc(booksDetails.id).set({
       booksDetails
-      }
-      , {merge : true}
-      );
+    }
+      , { merge: true }
+    );
   }
+
+  getBookDetailsById(Bookid) {
+    return this.booksDb.collection('Books').doc(Bookid);
+  }
+
 }
