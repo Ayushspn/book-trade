@@ -1,3 +1,17 @@
-<p>
-  book-details works!
-</p>
+<div class="container">
+  <div class="row row-details">
+    <div class="col-3 col-md-3 col-sm-12 col-lg-3">
+      <img src = {{bookdetails?.booksDetails?.imgePath}} alt ="book-image" style ="width: 80%">
+    </div>
+    <div class="col-9 col-md-9 col-sm-12 col-lg-9">
+      <h1>Book details</h1>
+      <label>Book Title</label>
+      <p>{{bookdetails?.booksDetails?.bookName}}</p>
+      <label>Book Description</label>
+      <p>{{bookdetails?.booksDetails?.bDescription}}</p>
+      <label>Owner of Book Description</label>
+      <p>{{bookdetails?.booksDetails?.createdId}}</p>
+      <button class="btn btn-primary">Notify Book Owner</button>
+    </div>
+  </div>
+</div>
